@@ -312,6 +312,11 @@ snippet fe "fmt.Errorf(...)"
 fmt.Errorf("${1:${VISUAL}}")
 endsnippet
 
+# log infof
+snippet li "log.Infof(...)"
+log.Infof("${1:${VISUAL}} = %+v", $1)
+endsnippet
+
 # log printf
 snippet lf "log.Printf(...)"
 log.Printf("${1:${VISUAL}} = %+v\n", $1)
@@ -332,6 +337,10 @@ snippet map "map[Type]Type"
 map[${1:string}]${0:int}
 endsnippet
 
+# int64
+snippet i4 "int64()"
+int64(${1:0})
+endsnippet
 # main()
 snippet main "func main() { ... }"
 func main() {

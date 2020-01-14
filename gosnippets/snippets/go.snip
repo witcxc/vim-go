@@ -227,6 +227,10 @@ abbr fmt.Errorf(...)
 snippet lf
 abbr log.Printf(...)
 	log.Printf("${1} = %+v\n", $1)
+# log infof
+snippet li
+abbr log.Infof(...)
+	log.Infof("${1} = %+v\n", $1)
 # log println
 snippet ln
 abbr log.Println(...)
@@ -239,6 +243,10 @@ abbr make(Type, size)
 snippet map
 abbr map[Type]Type
 	map[${1:string}]${0:int}
+# int64
+snippet i4
+abbre int64()
+    int64(${1:0})
 # main()
 snippet main
 abbr func main() { ... }
